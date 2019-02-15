@@ -6,7 +6,7 @@ node{
   stage('Checkout the code') 
     
     {
-     git branch: 'master', git credentialsId: '134ca311-4f74-4036-869d-b37b41bf170b', url: 'https://github.com/abhireddy22/maven-web-application.git'',    
+     git branch: 'master', credentialsId: '134ca311-4f74-4036-869d-b37b41bf170b', url: 'https://github.com/abhireddy22/maven-web-application.git'    
     }
     
    
