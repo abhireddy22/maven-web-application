@@ -4,6 +4,7 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
 node{
     
   stage('Checkout the code') 
+    /*
     {
      git branch: 'master', git credentialsId: '134ca311-4f74-4036-869d-b37b41bf170b', url: 'https://github.com/abhireddy22/maven-web-application.git'',    
     }
@@ -66,5 +67,5 @@ Mithun Technologies.
 ''', cc: 'devopstrainingblr@gmail.com', from: '', replyTo: '', subject: 'Build Done', to: 'devopstrainingblr@gmail.com'
   
     }
-    
+    */
 }
