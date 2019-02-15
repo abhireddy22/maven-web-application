@@ -4,9 +4,10 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
 
 node('slaves'){
    cleanWs notFailBuild: true
-    /*
+    
  stage('Chekout the code')   {
-    git branch: 'development', credentialsId: '7f781337-4f99-4b42-84c9-e504246c0426', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git' 
+         git branch: 'development', git credentialsId: '134ca311-4f74-4036-869d-b37b41bf170b', url: 'https://github.com/abhireddy22/maven-web-application.git'',    
+ 
  }
  
  
@@ -26,7 +27,7 @@ node('slaves'){
         bat 'mvn clean package' 
      }
  }
- 
+  /*   
   stage('SonarQube Report'){
      if(isUnix()){
       sh 'mvn sonar:sonar'
