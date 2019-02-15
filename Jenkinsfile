@@ -2,7 +2,7 @@
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '3'))])
 
 
-node('slaves'){
+node{
    cleanWs notFailBuild: true
     
  stage('Chekout the code')   {
